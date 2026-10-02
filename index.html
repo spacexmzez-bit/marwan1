@@ -1,0 +1,413 @@
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السيرة الذاتية الرسمية | معالي المستشار مروان</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Cairo & Tajawal) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                        tajawal: ['Tajawal', 'sans-serif'],
+                    },
+                    colors: {
+                        gold: {
+                            400: '#f6d365',
+                            500: '#fda085',
+                            600: '#d97706'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #0b1120;
+            color: #f1f5f9;
+        }
+        .glow-effect {
+            box-shadow: 0 0 35px -5px rgba(245, 158, 11, 0.25);
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #fcd34d 0%, #f59e0b 50%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="selection:bg-amber-500 selection:text-slate-900 overflow-x-hidden">
+
+    <nav class="sticky top-0 z-50 glass-card border-b border-slate-800/80 px-4 py-3 sm:px-8">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 font-extrabold text-xl border border-amber-500/30">
+                    م
+                </span>
+                <div>
+                    <h1 class="font-bold text-lg leading-tight text-white font-tajawal">مؤسسة مروان الدولية</h1>
+                    <p class="text-xs text-amber-400/90 font-medium">للأبحاث والتأجيل الاستراتيجي</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    الحالة: نايم بالغرفة
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-12 pb-16 px-4 sm:px-6 overflow-hidden">
+        <div class="absolute -top-24 right-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/2 left-10 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <!-- Distinguished Avatar / Picture Frame -->
+            <div class="relative inline-block mb-6">
+                <div class="w-36 h-36 sm:w-44 sm:h-44 rounded-full p-1.5 bg-gradient-to-tr from-amber-400 via-amber-600 to-yellow-200 glow-effect mx-auto shadow-2xl">
+                    <div class="w-full h-full rounded-full bg-slate-800 overflow-hidden relative group">
+                        <!-- Image placeholder: Replace src with Marwan's actual photo file -->
+                        <img 
+                            id="profile-img"
+                            src="https://placehold.co/400x400/1e293b/f59e0b?text=صورة+معالي+مروان" 
+                            alt="صورة مروان الفخمة" 
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            onerror="this.src='https://placehold.co/400x400/1e293b/f59e0b?text=مروان+العظيم'"
+                        />
+                    </div>
+                </div>
+                <div class="absolute -bottom-2 right-1/2 transform translate-x-1/2 bg-slate-900 border border-amber-500/40 px-3 py-1 rounded-full shadow-lg flex items-center gap-1.5">
+                    <span class="text-xs">👑</span>
+                    <span class="text-xs font-bold text-amber-300">الرقم الصعب</span>
+                </div>
+            </div>
+
+            <!-- Title & Subtitle -->
+            <div class="inline-block px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs sm:text-sm font-semibold mb-3">
+                الرئيس التنفيذي لشؤون التأخير وسحب الشواحن
+            </div>
+            <h2 class="text-3xl sm:text-5xl font-black text-white mb-4 tracking-tight">
+                معالي الأخ المبجّل <span class="gold-gradient">مــروان</span>
+            </h2>
+            <p class="text-slate-300 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed mb-6 font-tajawal">
+                خبير دولي معتمد في الاستيقاظ الساعة ٤ العصر، الحاصل على وسام الشرف في التبخر الفوري بمجرد سماع كلمة «مين يجيب طلبات من السوبرماركت»، ومالك براءة اختراع الرد بكلمة «خلاص الحين بس خمس دقايق».
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-3">
+                <a href="#stats" class="px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm transition-all transform hover:-translate-y-0.5 shadow-lg shadow-amber-500/20">
+                    استعراض البطولات الخالدة 🏆
+                </a>
+                <a href="#favor-generator" class="px-5 py-2.5 rounded-xl glass-card hover:bg-slate-700/60 text-white font-medium text-sm transition-all border border-slate-700">
+                    طلب خدمة عاجلة ⚡
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="stats" class="py-12 px-4 sm:px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-10">
+            <h3 class="text-2xl sm:text-3xl font-bold text-white mb-2">إحصائيات غير مسبوقة عالمياً</h3>
+            <p class="text-slate-400 text-sm">بيانات موثوقة من مركز القياس والتقييم المنزلي المعتمد</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <!-- Stat 1 -->
+            <div class="glass-card p-6 rounded-2xl border border-slate-700/50 hover:border-amber-500/40 transition-all hover:-translate-y-1">
+                <div class="text-amber-400 text-3xl mb-3">🔌</div>
+                <div class="text-3xl sm:text-4xl font-black text-white mb-1">99.9%</div>
+                <h4 class="text-base font-bold text-slate-200 mb-1">سحب شواحن البيت</h4>
+                <p class="text-xs text-slate-400 leading-normal">نسبة أخذ الشواحن بدون أي تنبيه مسبق وإنكار التهمة فوراً وبثقة تامة.</p>
+            </div>
+
+            <!-- Stat 2 -->
+            <div class="glass-card p-6 rounded-2xl border border-slate-700/50 hover:border-amber-500/40 transition-all hover:-translate-y-1">
+                <div class="text-amber-400 text-3xl mb-3">⚡</div>
+                <div class="text-3xl sm:text-4xl font-black text-white mb-1">0.02 ث</div>
+                <h4 class="text-base font-bold text-slate-200 mb-1">سرعة التبخر اللحظي</h4>
+                <p class="text-xs text-slate-400 leading-normal">الزمن القياسي للاختفاء من الصالة فور استشعار وجود كيس قمامة يحتاج إخراج.</p>
+            </div>
+
+            <!-- Stat 3 -->
+            <div class="glass-card p-6 rounded-2xl border border-slate-700/50 hover:border-amber-500/40 transition-all hover:-translate-y-1">
+                <div class="text-amber-400 text-3xl mb-3">🛏️</div>
+                <div class="text-3xl sm:text-4xl font-black text-white mb-1">16 ساعة</div>
+                <h4 class="text-base font-bold text-slate-200 mb-1">غيبوبة القيلولة</h4>
+                <p class="text-xs text-slate-400 leading-normal">مدة النوم المستمر مع القدرة العجيبة على الاستيقاظ فقط وقت وجبة الغداء.</p>
+            </div>
+
+            <!-- Stat 4 -->
+            <div class="glass-card p-6 rounded-2xl border border-slate-700/50 hover:border-amber-500/40 transition-all hover:-translate-y-1">
+                <div class="text-amber-400 text-3xl mb-3">⚖️</div>
+                <div class="text-3xl sm:text-4xl font-black text-white mb-1">100%</div>
+                <h4 class="text-base font-bold text-slate-200 mb-1">الفوز بالنقاشات العائلية</h4>
+                <p class="text-xs text-slate-400 leading-normal">الانتصار في كافة النقاشات الفلسفية بدون أي دليل أو منطق يذكر وبصوت واثق.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 px-4 sm:px-6 max-w-4xl mx-auto">
+        <div class="text-center mb-10">
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">مسيرة الكفاح</span>
+            <h3 class="text-2xl sm:text-3xl font-bold text-white mt-2">محطات تاريخية في مسيرة مروان</h3>
+        </div>
+
+        <div class="relative border-r-2 border-slate-700/80 mr-4 sm:mr-8 space-y-8">
+            <!-- Timeline Item 1 -->
+            <div class="relative pr-6">
+                <div class="absolute -right-2 top-1.5 w-4 h-4 rounded-full bg-amber-500 border-4 border-slate-900 shadow"></div>
+                <div class="glass-card p-5 rounded-2xl">
+                    <div class="flex items-center justify-between mb-2">
+                        <h4 class="text-base font-bold text-amber-300">بداية رحلة الاحتراف</h4>
+                        <span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">2020</span>
+                    </div>
+                    <p class="text-sm text-slate-300">اكتشاف الموهبة الفطرية في النوم على كنبة الصالة بزاوية 45 درجة والاستيقاظ برقبة مشدودة دون ندم.</p>
+                </div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="relative pr-6">
+                <div class="absolute -right-2 top-1.5 w-4 h-4 rounded-full bg-amber-500 border-4 border-slate-900 shadow"></div>
+                <div class="glass-card p-5 rounded-2xl">
+                    <div class="flex items-center justify-between mb-2">
+                        <h4 class="text-base font-bold text-amber-300">الماجستير في فن الرد الدبلوماسي</h4>
+                        <span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">2022</span>
+                    </div>
+                    <p class="text-sm text-slate-300">التخرج بمرتبة الشرف الأولى في استخدام ردود مثل: «بعدين»، «أصلاً خلاص سويتها فكرياً»، و«ليش أنا بالذات؟».</p>
+                </div>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="relative pr-6">
+                <div class="absolute -right-2 top-1.5 w-4 h-4 rounded-full bg-amber-500 border-4 border-slate-900 shadow"></div>
+                <div class="glass-card p-5 rounded-2xl">
+                    <div class="flex items-center justify-between mb-2">
+                        <h4 class="text-base font-bold text-amber-300">ترقية لمنصب مساعد تنفيذي أول</h4>
+                        <span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">2024</span>
+                    </div>
+                    <p class="text-sm text-slate-300">تكليفه رسميًا بمهام إمساك مفتاح العجل والمطرقة لأبيه أثناء الصيانة مع الاستماع المتواصل للتوجيهات.</p>
+                </div>
+            </div>
+
+            <!-- Timeline Item 4 -->
+            <div class="relative pr-6">
+                <div class="absolute -right-2 top-1.5 w-4 h-4 rounded-full bg-amber-400 border-4 border-slate-900 shadow"></div>
+                <div class="glass-card p-5 rounded-2xl border-amber-500/30">
+                    <div class="flex items-center justify-between mb-2">
+                        <h4 class="text-base font-bold text-amber-300">الترشح لجوائز السلام والهدوء</h4>
+                        <span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">2026</span>
+                    </div>
+                    <p class="text-sm text-slate-300">الوصول للمرحلة النهائية في إقناع الوالدة بأنه كان يذاكر طوال الوقت حتى وهو ماسك الجوال ومشغل تيك توك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 px-4 sm:px-6 max-w-5xl mx-auto">
+        <div class="text-center mb-10">
+            <h3 class="text-2xl sm:text-3xl font-bold text-white mb-2">شهادات الشركاء والمراقبين</h3>
+            <p class="text-slate-400 text-sm">ماذا يقول كبار الشخصيات المقربة عن تجربة التعايش معه</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Testimonial 1 -->
+            <div class="glass-card p-6 rounded-2xl relative">
+                <div class="text-3xl text-amber-500/30 absolute top-4 left-4 font-serif">“</div>
+                <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                    «ما شاء الله عليه ونعم الابن.. بس لو يقوم يعدل نومه ويطفي لمبة الصالة وراه كان صرنا أسعد عائلة في الشرق الأوسط.»
+                </p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-300 font-bold">👵</div>
+                    <div>
+                        <div class="text-sm font-bold text-white">الوالدة حفظها الله</div>
+                        <div class="text-xs text-amber-400">رئيسة مجلس إدارة البيت</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="glass-card p-6 rounded-2xl relative">
+                <div class="text-3xl text-amber-500/30 absolute top-4 left-4 font-serif">“</div>
+                <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                    «أفضل إنسان في العالم يلف سلك الشاحن بطريقة هندسية معقدة لدرجة حتى وكالة ناسا تعجز عن فكها، وبدون ما يرجعه طبعاً.»
+                </p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-300 font-bold">👦</div>
+                    <div>
+                        <div class="text-sm font-bold text-white">الأخ الأكبر (المتضرر الأكبر)</div>
+                        <div class="text-xs text-blue-400">الراعي الرسمي للأجهزة والشواحن المسروقة</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 px-4 sm:px-6 max-w-5xl mx-auto">
+        <div class="text-center mb-8">
+            <span class="text-xs font-bold text-amber-400 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">الألبوم الرسمي</span>
+            <h3 class="text-2xl sm:text-3xl font-bold text-white mt-2">معرض اللقطات التذكارية لمروان</h3>
+            <p class="text-slate-400 text-sm mt-1">يمكنك استبدال هذه الصور بصور مروان الحقيقية المضحكة</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+            <!-- Gallery Item 1 -->
+            <div class="glass-card rounded-2xl overflow-hidden group">
+                <div class="h-48 overflow-hidden bg-slate-800">
+                    <img 
+                        src="https://placehold.co/600x400/1e293b/f59e0b?text=مروان+وهو+يفكر+في+تأجيل+المذاكرة" 
+                        alt="صورة مروان 1" 
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        onerror="this.src='https://placehold.co/600x400/1e293b/f59e0b?text=صورة+ذكية'"
+                    >
+                </div>
+                <div class="p-4">
+                    <h5 class="font-bold text-white text-sm mb-1">جلسة تأمل عميقة</h5>
+                    <p class="text-xs text-slate-400">لحظة التفكير في أسباب عدم الرغبة في إنجاز الواجبات.</p>
+                </div>
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="glass-card rounded-2xl overflow-hidden group">
+                <div class="h-48 overflow-hidden bg-slate-800">
+                    <img 
+                        src="https://placehold.co/600x400/1e293b/f59e0b?text=مروان+وهو+يسمع+مين+يجيب+أغراض" 
+                        alt="صورة مروان 2" 
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        onerror="this.src='https://placehold.co/600x400/1e293b/f59e0b?text=وضعية+الهروب'"
+                    >
+                </div>
+                <div class="p-4">
+                    <h5 class="font-bold text-white text-sm mb-1">وضعية التخفي التكتيكي</h5>
+                    <p class="text-xs text-slate-400">التظاهر بالتركيز الشديد في الهاتف لتجنب الذهاب للبقالة.</p>
+                </div>
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="glass-card rounded-2xl overflow-hidden group">
+                <div class="h-48 overflow-hidden bg-slate-800">
+                    <img 
+                        src="https://placehold.co/600x400/1e293b/f59e0b?text=مروان+بعد+ما+طلب+شاورما+لحاله" 
+                        alt="صورة مروان 3" 
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        onerror="this.src='https://placehold.co/600x400/1e293b/f59e0b?text=الطلب+السري'"
+                    >
+                </div>
+                <div class="p-4">
+                    <h5 class="font-bold text-white text-sm mb-1">الطلب السري الفاخر</h5>
+                    <p class="text-xs text-slate-400">استلام طلب توصيل المطعم بالسرقة قبل أن يلاحظ أي شخص بالبيت.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="favor-generator" class="py-12 px-4 sm:px-6 max-w-2xl mx-auto">
+        <div class="glass-card p-6 sm:p-8 rounded-3xl border border-amber-500/30 text-center shadow-2xl relative overflow-hidden">
+            <div class="text-4xl mb-3">🤖</div>
+            <h3 class="text-xl sm:text-2xl font-bold text-white mb-2 font-tajawal">نظام الرد الآلي لخدمات مروان</h3>
+            <p class="text-slate-400 text-xs sm:text-sm mb-6">
+                هل تحتاج مساعدة عاجلة من مروان؟ اضغط على الزر واكتشف العذر المبرمج مسبقاً!
+            </p>
+
+            <!-- Interactive Screen Box -->
+            <div id="excuse-box" class="min-h-[90px] flex items-center justify-center p-4 rounded-xl bg-slate-900/90 border border-slate-700 mb-6 text-amber-300 font-medium text-sm sm:text-base leading-relaxed transition-all">
+                «اضغط الزر بالأسفل لتقديم طلب فوري للمعالي»
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3 justify-center">
+                <button 
+                    id="generate-excuse-btn" 
+                    class="w-full sm:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-sm shadow-lg shadow-amber-500/20 active:scale-95 transition-all">
+                    طلب خدمة جديدة ⚡
+                </button>
+                <button 
+                    id="copy-link-btn" 
+                    class="w-full sm:w-auto px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold text-sm border border-slate-700 active:scale-95 transition-all">
+                    نسخ رابط الفضيحة 🔗
+                </button>
+            </div>
+            
+            <div id="toast" class="hidden mt-3 text-xs text-emerald-400 font-semibold transition-opacity duration-300">
+                تم نسخ الرابط بنجاح! شاركه مع مروان والعائلة 🚀
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-slate-800/80 py-8 text-center text-xs text-slate-500">
+        <p class="mb-1">تم تصميم هذا الموقع بكل محبة وتقدير للأسطورة مروان ❤️</p>
+        <p>جميع الحقوق محفوظة للمجلس الأعلى للكسل المنزلي © 2026</p>
+    </footer>
+
+    <script>
+        // Array of humorous realistic excuses
+        const marwanExcuses = [
+            "«والله كنت قايم أساعدكم بس توي حطيت راسي أنام خمس دقايق!»",
+            "«النظام حالياً في وضع توفير الطاقة.. حاول مجدداً بعد العصر سنة 2027.»",
+            "«شاحني ضاع وما أقدر أتحرك إلين ألقاه (هو مخبيه تحت مخدته).»",
+            "«ليش ما تطلبون من فلان؟ دايم أنا اللي أروح؟»",
+            "«عندي صداع نصفي يبدأ بس لما تطلبون مني أغراض البقالة.»",
+            "«أنا سويت الشي هذا في عقلي الباطن، كذا خلاص محسوب!»",
+            "«جاري معالجة الطلب... نسبة الفشل: 99.9%»",
+            "«والله جوعـان.. اطلبوا لي شاورما أول وبعدين يصير خير.»",
+            "«توي متسبح وما أقدر أطلع في الهواء الطلق عشان ما أمرض!»"
+        ];
+
+        const excuseBox = document.getElementById('excuse-box');
+        const excuseBtn = document.getElementById('generate-excuse-btn');
+        const copyBtn = document.getElementById('copy-link-btn');
+        const toast = document.getElementById('toast');
+
+        let lastIndex = -1;
+
+        // Display a random excuse
+        excuseBtn.addEventListener('click', () => {
+            let randomIndex;
+            do {
+                randomIndex = Math.floor(Math.random() * marwanExcuses.length);
+            } while (randomIndex === lastIndex && marwanExcuses.length > 1);
+
+            lastIndex = randomIndex;
+            
+            // Quick visual animation
+            excuseBox.style.opacity = '0';
+            setTimeout(() => {
+                excuseBox.textContent = marwanExcuses[randomIndex];
+                excuseBox.style.opacity = '1';
+            }, 150);
+        });
+
+        // Copy current page link to clipboard safely
+        copyBtn.addEventListener('click', () => {
+            const dummy = document.createElement('input');
+            document.body.appendChild(dummy);
+            dummy.value = window.location.href;
+            dummy.select();
+            try {
+                document.execCommand('copy');
+                toast.classList.remove('hidden');
+                setTimeout(() => {
+                    toast.classList.add('hidden');
+                }, 3000);
+            } catch (err) {
+                console.error("Failed to copy link:", err);
+            }
+            document.body.removeChild(dummy);
+        });
+    </script>
+</body>
+</html>
+```
